@@ -315,6 +315,15 @@ Cybersecurity Intern at Networkwalks-B084
 
 LinkedIn: www.linkedin.com/in/uchenna-u-6b4377367
 
+---
+
+## 📌 Project Information
+
+**Program Name:** Cybersecurity at Networkwalks | **Week:** 01 | **Project:** Cybersecurity & Pentesting Lab Setup | **Repository:** GitHub
+
+
+
+
 
 
 

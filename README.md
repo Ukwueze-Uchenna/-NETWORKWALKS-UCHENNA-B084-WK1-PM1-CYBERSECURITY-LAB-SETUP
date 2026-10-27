@@ -232,6 +232,11 @@ sudo nmcli connection modify "Wired connection 1" ipv4.dad-timeout 0
 sudo nmcli connection down "Wired connection 1"
 sudo nmcli connection up "Wired connection 1"
 ```
+The above is used to test for connectivity and subsequently restart/reboot connection (see images below)
+
+<img width="1920" height="891" alt="VirtualBox_kali-linux-2026 2-problem and solution 1" src="https://github.com/user-attachments/assets/b0327e52-2b3c-4de2-b56b-028ac481dc7c" />
+
+<img width="1920" height="891" alt="VirtualBox_kali-linux-2026 2-problem and solution 2" src="https://github.com/user-attachments/assets/b4353b75-51c8-403d-9bdc-591dd5f47509" />
 
 
 

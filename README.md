@@ -215,6 +215,25 @@ DNS:
 
 <img width="1920" height="891" alt="VirtualBox_kali-linux-2026 2-ping 8 8 8 8" src="https://github.com/user-attachments/assets/efb5b05b-a954-4349-aad7-7b3b95331c5e" />
 
+---
+
+# 💥 Problems Encountered & Solutions
+
+Documenting problems is an important part of the project.
+
+## Problem 1. Internet Connectivity After Static IP Configuration
+
+After manually configuring the IPv4 settings, Internet connectivity may fail depending on the Kali/NetworkManager configuration.
+
+A workaround or solution used during this lab was:
+
+```bash
+sudo nmcli connection modify "Wired connection 1" ipv4.dad-timeout 0
+sudo nmcli connection down "Wired connection 1"
+sudo nmcli connection up "Wired connection 1"
+```
+
+
 
 
 

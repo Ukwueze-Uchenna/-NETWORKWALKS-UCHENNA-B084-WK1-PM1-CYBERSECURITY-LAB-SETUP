@@ -147,6 +147,78 @@ The VM was allocated:
 ```text
 RAM: 2048 MB
 ```
+<img width="1920" height="891" alt="VirtualBox_kali-linux-2026 1" src="https://github.com/user-attachments/assets/aa12500d-6c0e-4dea-9c39-779ad98ca4fe" />
+A shared folder was also configured for transferring required files between the host operating system and the Kali VM.
+
+
+
+---
+
+## Step 5. Configure the Kali Linux Network
+
+The Kali Linux network configuration was checked and configured with a consistent IPv4 address.
+
+Example configuration:
+
+```text
+IP Address: 10.0.0.2/24
+Subnet Mask: 255.255.255.0
+Gateway: 10.0.0.1
+DNS: 8.8.8.8
+```
+
+A consistent IP address makes it easier to document the lab and reference the Kali machine in future exercises.
+
+<img width="1920" height="891" alt="NatNetwork ipv4 settings" src="https://github.com/user-attachments/assets/f268ef6c-c736-4d61-8505-0f06e7d35489" />
+
+## Step 6. Create a Clean VM Snapshot
+
+After completing the initial configuration, a VirtualBox snapshot was created.
+
+Example snapshot name:
+
+```text
+Clean Kali - Network Setup
+```
+
+The snapshot represents the clean baseline of the laboratory.
+
+If a future exercise changes or damages the VM configuration, the machine can be restored to this baseline.
+
+
+---
+
+# 🔎 Lab Verification
+
+| ✅ Test                        | 🧾 Command                      | 🎯 Expected Result              |
+| ----------------------------- | ------------------------------- | ------------------------------- |
+| 🌐 Check IP address           | `ip a`                          | Correct Kali IP displayed       |
+| 📡 Test gateway               | `ping 10.0.0.1`                 | Successful replies              |
+| 🌍 Test Internet connectivity | `ping 8.8.8.8`                  | Successful replies              |
+| 🔎 Test DNS resolution        | `nslookup networkwalks.com`     | Domain resolves                 |
+| 🧰 Verify Nmap                | `nmap --version`                | Nmap version displayed          |
+| 🔄 Verify snapshot            | Restore snapshot and run `ip a` | Baseline configuration restored |
+
+### Ping Results
+
+```text
+IP Address:
+10.0.0.2/24
+
+Gateway:
+10.0.0.1
+
+DNS:
+8.8.8.8
+```
+<img width="1920" height="891" alt="VirtualBox_kali-linux-2026 2-ping 10 0 0 1" src="https://github.com/user-attachments/assets/a7594403-97de-4ed5-806b-f6bcbf2e8a47" />
+
+<img width="1920" height="891" alt="VirtualBox_kali-linux-2026 2-ping 8 8 8 8" src="https://github.com/user-attachments/assets/efb5b05b-a954-4349-aad7-7b3b95331c5e" />
+
+
+
+
+
 
 
 
